@@ -1,0 +1,39 @@
+{% macro header() %}
+<header>
+    <nav>
+        <ul>
+            {% for val in config.extra.menu.nav %}
+
+                {% if page %}
+
+                    {% set first_path = page.components | first | capitalize %}
+                        {% if val.name == first_path %}
+                        <li aria-current="page">
+                        {% else %}
+                        <li>
+                        {% endif %}
+
+                {% elif section %}
+
+                    {% if section.path == "/" %}
+                    {% set first_path = "Puyma" %}
+                    {% else %}
+                    {% set first_path = section.components | first | capitalize %}
+                    {% endif %}
+                    
+                        {% if val.name == first_path %}
+                        <li aria-current="page">
+                        {% else %}
+                        <li>
+                        {% endif %}
+
+                {% else %}
+                {% endif %}
+
+                <a href="{{ val.url }}"><img src="{{ config.base_url }}/{{ val.img }}" alt="{{ val.alt }}" class="lotd-icon"><span>{{ val.name }}</span></a></li>
+                
+            {% endfor %}
+        </ul>
+    </nav>
+</header>
+{% endmacro %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block main %}
+<main>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem maiores ea ipsum quod animi explicabo officia, dolor quibusdam ipsam doloribus doloremque dolore placea!</h1>
+    {% if config.extra.show_context == true %}
+        <br>
+        <p>Index.html || First component: {{ section.components | first }}</p>
+        <!-- <span>{{ __tera_context }}</span> -->
+        <br>
+    {% else %}
+    {% endif %}
+</main>
+{% endblock main %}

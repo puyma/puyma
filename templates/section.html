@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main %}
+<main>
+    <h1>{{ section.title }}</h1>
+    {% if config.extra.show_context == true %}
+        <br>
+        <p>Section.html || First component: {{ section.components | first }}</p>
+        <span>{{ __tera_context }}</span><br>
+        <br>
+    {% else %}
+    {% endif %}
+
+    {% for page in section.pages %}
+    <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+    {% endfor %}
+
+    <p>- - -</p>
+
+    {% for subsection in section.subsections %}
+        {% set subsectionURL = subsection %}
+        {% set subsectionTitle = subsectionURL %}
+    <li><a href="">{{ subsectionURL }}</a></li>
+    {% endfor %}
+
+</main>
+{% endblock main %}

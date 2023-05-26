@@ -1,0 +1,59 @@
+# The URL the site will be built for
+base_url = "https://amyup.xyz"
+
+# The site title and description; used in feeds by default.
+title = "Puyma"
+description = "Puyma's digital toolbox"
+
+# The default language; used in feeds.
+default_language = "en"
+
+output_dir = "public"
+compile_sass = true
+minify_html = false
+
+hard_link_static = false
+
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+render_emoji = false
+
+[extra]
+# Put all your custom variables here
+author = "Puyma"
+github = "https://github.com/puyma"
+twitter = "https://twitter.com/puymarti"
+email = "puyma@amyup.xyz"
+site_favicon = "data:,"
+
+show_context = true
+
+[[extra.menu.nav]]
+name = "Puyma"
+url = "/"
+img = "menu_icon.svg"
+alt = ""
+
+[[extra.menu.nav]]
+name = "Projectes"
+url = "/projectes"
+img = "menu_icon.svg"
+alt = ""
+
+[[extra.menu.nav]]
+name = "Tools"
+url = "/tools"
+img = "menu_icon.svg"
+alt = ""
+
+[[extra.menu.nav]]
+name = "Moods"
+url = "/moods"
+img = "menu_icon.svg"
+alt = ""
