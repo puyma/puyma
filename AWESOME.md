@@ -21,5 +21,7 @@ Cool repositories/sources I may need someday.
 ## AI Resources
 - [CiutadanIA](https://ciutadania.cat)
 
+# 2bsorted
+
 - [zx2c4](https://www.zx2c4.com/)
 - [pass](https://www.passwordstore.org/)
