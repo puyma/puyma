@@ -1,1 +1,1 @@
-_Hi, you have reached the README of [@puyma](https://github.com/puyma) at GitHub dot com. I am definitely interested in what you have to say; I’m just busy right now. Please leave a message, and I will get back to you ASAP._
+_Hi, ~~you have reached the README of [@puyma](https://github.com/puyma) at GitHub dot com. I am definitely interested in what you have to say; I’m just busy right now. Please leave a message, and I will get back to you ASAP.~~ I left. You may find me somewhere else. Probably at git dot sr dot ht or at git dot disroot dot org._
